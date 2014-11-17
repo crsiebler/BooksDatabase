@@ -2,12 +2,13 @@
 // Name: Cory Siebler
 // StudentID: 1000832292
 // Lecture Topic: Lecture 14 - JPA
-// Description: 
+// Description: Authors JPA class.
 package booksdatabase;
 
 import java.io.Serializable;
 import java.util.List;
 import javax.persistence.Basic;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -220,7 +221,8 @@ public class Authors implements Serializable {
      */
     @Override
     public String toString() {
-        return "booksdatabaseexample.Authors[ authorid=" + authorid + " ]";
+        return lastname + ", " + firstname;
+//        return "Authors[ authorid=" + authorid + " firstname=" + firstname + " lastname=" + lastname + " ]";
     }
 
 }

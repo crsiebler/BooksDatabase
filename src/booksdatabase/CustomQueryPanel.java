@@ -2,7 +2,7 @@
 // Name: Cory Siebler
 // StudentID: 1000832292
 // Lecture Topic: Lecture 14 - JPA
-// Description: 
+// Description: Displays the results of a custom query.
 package booksdatabase;
 
 import javax.swing.JLabel;
@@ -26,7 +26,7 @@ class CustomQueryPanel extends JPanel {
     /**
      * 
      */
-    public CustomQueryPanel() {
+    public CustomQueryPanel(BooksInterface iface) {
         resultsTable = new JTable();
         scrollPane = new JScrollPane(resultsTable);
         queryLabel = new JLabel("Custom Query:");
